@@ -1,0 +1,16 @@
+Lesson:2 
+    Packages and Static keyword
+
+Packages are basically folders that allow storage of multiple classess belonging to a project so that we can easily maintain the code and help distribute and seperate areas of concerns to multiple utilities.
+
+Static keyword allows for using anything without the need to initialize an object 
+
+why do this ?
+because there will be cases where in the classes will contain variables that are common to all the members of a class and will remain the same through out their use 
+
+for ex: if theres a human class then there is a  variable that is common to every human and doesnt change that in accordance to any single or multiple objects such as the population of the entire human race.
+
+hence the deaths willl reduce this and the births will increment it hence making it an important factor of a class but not limited to an object,therefore it needs to be handled without having to create an object of that class.
+using this keyword in static members is discouraged to avoid confusion also if we want to use we will simply have to create an object and then access that variable but using this keyword will throw a warning is all 
+
+static adn non static members have to be dealt with , with care and just to avoid any confusion or unwanted errors it is recommended to not use this keyword but use the className when invoking static member.
