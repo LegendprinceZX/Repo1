@@ -1,0 +1,34 @@
+Questions:
+
+1. What is the primary purpose of classes in programming, and how do they allow us to define new data types?
+
+2. How do you create objects from classes, and why is this process analogous to using a blueprint to build something?
+
+3. Explain the difference between passing objects by reference in functions and passing primitive data types by value.
+
+4. What is the role of constructors in object-oriented programming, and how do they differ from regular functions, especially in terms of return type?
+
+5. Can you provide an example of when you would use the "this" keyword within a class, and how does it help in generalizing the usage of an instance of a class without creating one?
+
+6. Describe the significance of the "final" keyword in the context of object-oriented programming and how it relates to immutability.
+
+7. What is the purpose of the "finalize" method, and when is it called during the object lifecycle?
+
+//Lesson:1 
+Object-Oriented Programming (OOP) is a programming paradigm that allows us to model real-world entities and their interactions in our software. Key to OOP are the concepts of classes and objects.
+
+Classes serve as blueprints or templates for creating objects. They define the structure and behavior of objects that will be instantiated from them. Think of classes as defining the characteristics and methods that objects of a certain type will possess. For example, you can have a "Human" class that defines properties like name, age, and gender, as well as methods like "speak" and "walk."
+
+Objects, on the other hand, are instances of classes. When you create an object, you are essentially bringing to life a specific entity based on the class's blueprint. So, if you have a "Human" class, creating an object of that class could represent an individual like "John" or "Sara." Objects have their own unique data, but they share the structure and behavior defined by their class. Objects are crucial because they allow us to work with individual entities in our code.
+
+In OOP, objects are typically passed by reference in functions, meaning that changes made to an object within a function affect the original object outside of the function. In contrast, primitive data types like integers or characters are passed by value, meaning that changes made within a function do not affect the original variable.
+
+Constructors are special methods that run when an object is created from a class. They are responsible for initializing the object's properties. Constructors are typically used to ensure that an object starts with the correct initial state. Unlike regular functions, constructors do not specify a return type because they automatically return the newly created object.
+
+The "this" keyword is used within a class to refer to the current object instance. It helps distinguish between class attributes and parameters with the same name. For example, if a class has a property called "name," you can use "this.name" to refer to the object's "name" property rather than a local variable with the same name.
+
+The "final" keyword introduces immutability, indicating that a class, method, or variable cannot be further modified or extended. This can be useful for ensuring certain aspects of your code remain constant.
+
+Finally, the finalize method is called by the Java Virtual Machine (JVM) when an object is about to be destroyed, allowing you to perform cleanup operations before the object is reclaimed by memory management.
+
+In addition to these concepts, OOP also includes principles like inheritance, encapsulation, polymorphism, and abstraction, which further enhance code organization, reuse, and maintainability.
