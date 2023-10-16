@@ -1,0 +1,10 @@
+Title: $ properties of OOPS 
+
+1.explain about inheritance and its types ?
+2.what happens when we have a reference variable of superclass/baseclass to an object of childclass?
+3.what is polymorphism ?
+4.what are the keywords in regards with polymorphism?
+5.what is Encapsulation?
+6.what is abstraction?
+7.what is the main difference between encapsulation and abstraction?
+8.what is an access modifier and how does private keyword affect the functionalitites of its declared member?

@@ -1,0 +1,70 @@
+Lesson:2 
+    Packages and Static keyword
+
+Packages are basically folders that allow storage of multiple classess belonging to a project so that we can easily maintain the code and help distribute and seperate areas of concerns to multiple utilities.
+
+Static keyword allows for using anything without the need to initialize an object 
+
+why do this ?
+because there will be cases where in , the classes will contain variables that are common to all the members of a class and will remain the same through out their use 
+
+for ex: if theres a human class then there is a  variable that is common to every human and doesnt change that in accordance to any single or multiple objects such as the population of the entire human race.
+
+hence the deaths will reduce this and the births will increment it hence making it an important factor of a class but not limited to an object,therefore it needs to be handled without having to create an object of that class.
+
+
+We can make use of static members within other staic members and if need be we will have to create objects of non static member to be used in static member.
+
+using this keyword in static members is discouraged to avoid confusion, also if we want to use we will simply have to create an object and then access that variable but using this keyword will throw a warning is all.
+
+static and non static members have to be dealt with care and just to avoid any confusion or unwanted errors it is recommended to not use this keyword but use the className when invoking static members.
+
+
+Static as simple as it gets allows for the static members to be independent of objects of the classes they reside within (parent class):
+    static members can be : classess , variables , methods or functions.
+
+all the static members are initialized at compile time but the objects are initialized at run time which further clears up the doubts of why static and non-static members have to be dealt with care .
+
+for example:
+
+class outer{
+    static class A{
+        String name;
+        public A(String name){
+            this.name=name;
+        }
+    }
+    //static classes can maintain seperate instances for other static members.
+    public static void main(String[] a){
+        A obj1 = new A('zain');
+        A obj2 = new A('noor');
+        Systtem.out.println(obj1.name);//will print zain
+        System.out.println(obj2.name);//will print noor
+    }
+}
+
+if class A was declared outside class outer then there wouldnt have been a need to declare class A as static as it wouldnt have been dependent on any other class,
+but in that case the variables should be declared static so that we can make use of them inside main method....which then would have given the output as noor and noor
+
+class A{
+    static String name;
+    public A(String name){
+        A.name=name;
+    }
+}
+class outer{
+    
+    //static classes can maintain seperate instances for other static members.
+    public static void main(String[] a){
+        A obj1 = new A('zain');
+        A obj2 = new A('noor');
+        Systtem.out.println(obj1.name);//will print noor: because first constructor initialized variable to zain then reasigns noor to it which is set as the value of the static variable hence we get noor noor as output 
+        System.out.println(obj2.name);//will print noor.
+    }
+}
+
+overriding of static methods is a concept dealt with inheretence but at this point we can understand the function calling tree that jvm follows.
+it checks for functions names first within the class then the built-in java functions.
+
+
+
