@@ -25,7 +25,7 @@ In OOP, objects are typically passed by reference in functions, meaning that cha
 
 Constructors are special methods that run when an object is created from a class. They are responsible for initializing the object's properties. Constructors are typically used to ensure that an object starts with the correct initial state. Unlike regular functions, constructors do not specify a return type because they automatically return the newly created object.
 
-The "this" keyword is used within a class to refer to the current object instance. It helps distinguish between class attributes and parameters with the same name. For example, if a class has a property called "name," you can use "this.name" to refer to the object's "name" property rather than a local variable with the same name.
+The "this" keyword is used within a class to refer to the current object instance. It helps distinguish between class attributes and parameters with the same name. For example, if a class has a property called "gender," you can use "this.gender" to refer to the object's "gender" property rather than a local variable with the same name.
 
 The "final" keyword introduces immutability, indicating that a class, method, or variable cannot be further modified or extended. This can be useful for ensuring certain aspects of your code remain constant.
 

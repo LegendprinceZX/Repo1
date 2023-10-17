@@ -1,0 +1,59 @@
+title:Access Modifiers ,Abstract Classes and interfaces
+
+Questions:
+1.What are  Access  modifiers and name the types in java?
+2.sketch the table of accessibility of these modifiers.
+3.what are the characteristics of each ?
+4.What Problem do they solve?
+5.Why we tackle the problem with the access modifiers?
+6.Describe about in-built functions.
+7.How is Object class Inherited when we are already extending the present class by some other class , as we know there is no multiple inheritance in java?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Notes:
+
+1.Access modifiers are keywords in java declared when defining a class or its memebers ,this allows the programmer to limit the use of the declared member to a predefined scope as will be mentioned in the table later. 
+
+
+2.The table of access modifiers
+    | Access Modifier | Class | Package | Subclass | World |
+    |-----------------|-------|---------|----------|-------|
+    | `public`        | Yes   | Yes     | Yes      | Yes   |
+    | `protected`     | Yes   | Yes     | Yes      | No    |
+    | Default         | Yes   | Yes     | No       | No    |
+    | `private`       | Yes   | No      | No       | No    |
+
+here subclass means extending could be outside the package or inside.
+
+but the world would definitely mean outside the package.
+3.refer table 
+
+4.Access modifier allows you to control what the people are trying to use from the module or package , class etc you have created.
+this is in accordance to achieving the principle of abstraction an d encapsulation.
+not everything has to be seen or be accessible to the public as they may or might not understand the internal implementation and will only cause complex bugs or issues to evolve if given final authority or access to critical members. 
+
+5.why we tackle the problem using these set rules and keywords is to get a proper base to start security of the system and after enough tests they have proved to be useful and also have improved the usage of such methods.
+
+6.in-built function that i am talking about here are Inherited via the Object Class provided by the java language , we also make use of collection frameworks that allows for use of data structures in accordance to uor problem statement.
+
+7.there is an internal implementation in play here , where in we can access these via the layers of inheritance involved.
+As Object Class is the root class extended by all the existing classes.
+its used to instantiate objects.
+
+
+
+
+

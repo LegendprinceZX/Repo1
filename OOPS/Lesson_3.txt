@@ -3,8 +3,39 @@ Title: $ properties of OOPS
 1.explain about inheritance and its types ?
 2.what happens when we have a reference variable of superclass/baseclass to an object of childclass?
 3.what is polymorphism ?
-4.what are the keywords in regards with polymorphism?
+4.what are the keywords in regards with polymorphism? And What is dynamic method dispatch?
 5.what is Encapsulation?
 6.what is abstraction?
 7.what is the main difference between encapsulation and abstraction?
-8.what is an access modifier and how does private keyword affect the functionalitites of its declared member?
+8.what is an access modifier and how does private keyword affect the functionalities of its declared member?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Notes:
+Dynamic method dispatch used in runtime / dynamic polymorphism is used by jvm to determine which overriden method is to be called when we are referencing an superclass based object to an object of childclass, and that will be the method of the childclass.
+what i  am trying to say is :
+Parent obj = new Child();
+in this if there are overriden methods its the jvm that decides which method is to be called , generally we woul dhave thought that the parent reference can only access the objects of its class as it doesnt know what is in the child class , but the jvm has the knowledge of all the overriden class as inheritance is involved and therefore it will check for the method in the childclass and also the parent class and if the method is overriden it calls the method of child class.
+
+Difference between abstraction and encapsulation is simply 
+abstraction is a property of our product that allows hiding of necessary but irrelevant working and providing a simply key to work with the product such as ui (Frontend)
+and encapsulation is the implementation i.e introducing classes , objects , methods etc to achieve abstraction(i.e backend).
+

@@ -63,7 +63,7 @@ class outer{
     }
 }
 
-overriding of static methods is a concept dealt with inheretence but at this point we can understand the function calling tree that jvm follows.
+overriding of static methods is a concept dealt with inheritence but at this point we can understand the function calling tree that jvm follows.
 it checks for functions names first within the class then the built-in java functions.
 
 
